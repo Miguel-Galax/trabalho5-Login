@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 239, 255);
+    height: 100vh;
+}
+
+.caixa{
+    border: 2px solid black
+}
+.linha{border: bottom 3px;}
+
+.arredondado {
+    border: 2px solid black;
+    border-radius: 10px;
+}

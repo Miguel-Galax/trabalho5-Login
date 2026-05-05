@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <style>
+          borda-texto {
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 5px; 
+    display: inline-block;
+          }
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+          }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        h1 { text-align: center; margin-top: 0; }
+        .input-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;}
+
+            .login-form {
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;}
+</style>
+</head>
+<body>
+    <center>
+    
+     <form class="borda de texto" action="">
+        <h1>
+            Login
+        </h1><br>
+        <label for="femail">Email</label><br>
+        <input type="email" id="femail" name="femail" required><br>
+
+         <label for="fsenha" name="fsenha" required>Senha</label><br>
+        <input type="password" id="fsenha" name="fsenha" required><br>
+
+        <input type="submit" value="Enviar">
+     </form>
+    </center>
+
+      <script>
+        const formulario = document.querySelector('form');
+
+        formulario.addEventListener('submit', function(event) {
+
+            event.preventDefault();
+
+            const email = document.getElementById('femail').value;
+
+            alert(`Seu login com o e-mail ${email} foi enviado com sucesso.`);
+            
+            console.log("Dados prontos para envio!");
+        });
+    </script>
+</body>
+</html>
